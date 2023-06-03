@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX Classifieds</title>
+    <link rel="stylesheet" href="./style/browser.css">
+</head>
+<body style="padding: 0; margin: 0;">
+    <nav style="display: flex; justify-content: space-evenly; height: 60px; background-color: antiquewhite; align-items: center; font-size: 1.6rem;">
+        <a href="./index.html">Home</a>
+        <a href="./post.html">Post Classifieds</a>
+        <a href="./browse.html">Browse Classifieds</a>
+    </nav>
+
+    <div class="filterandsort">
+        <select name="category" id="category">
+            <option value="">select category</option>
+            <option value="clothing">Clothing</option>
+            <option value="electronics">Electronics</option>
+            <option value="furniture">Furniture</option>
+        </select>
+        <select name="date" id="date">
+            <option value="">sort by date</option>
+            <option value="sortbylatest">Sort by Latest</option>
+            <option value="sortbyold">Sort by Old</option>
+        </select>
+        <input type="text" name="search" id="serach" placeholder="search product by name">
+    </div>
+    <div id="products"></div>
+    <div id="pagination">
+    </div>
+    <script src="./src/browse.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX Classifieds</title>
+    <link rel="stylesheet" href="./style/post.css">
+</head>
+<body style="padding: 0; margin: 0;">
+    <nav style="display: flex; justify-content: space-evenly; height: 60px; background-color: antiquewhite; align-items: center; font-size: 1.6rem;">
+        <a href="./index.html">Home</a>
+        <a href="./post.html">Post Classifieds</a>
+        <a href="./browse.html">Browse Classifieds</a>
+    </nav>
+    <div id="formdiv">
+        <form id="form">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="text" name="description" id="description" placeholder="Description">
+            <select name="category" id="category">
+                <option value="">select category</option>
+                <option value="clothing">Clothing</option>
+                <option value="electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+            </select>
+            <input type="url" name="image" id="image" placeholder="Image URL">
+            <input type="text" name="location" id="location" placeholder="Location">
+            <input type="number" name="price" id="price" placeholder="Price">
+            <input type="submit" name="submit" id="submit" value="Post Data">
+        </form>
+    </div>
+    <script src="./src/post.js"></script>
+</body>
+</html>

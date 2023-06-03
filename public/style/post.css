@@ -1,0 +1,80 @@
+#formdiv{
+    margin: 50px auto;
+    width: 40%;
+    max-width: 500px;
+}
+
+#top{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+#loginbtn{
+    border: none;
+    height: 30px;
+    background-color: aquamarine;
+}
+#loginbtn:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+}
+#signupbtn{
+    border: none;
+    height: 30px;
+}
+#signupbtn:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+#form{
+    padding: 5%;
+    margin: auto;
+    border: 1px solid aquamarine;
+}
+#form>input{
+    padding: 5px 0 5px 5px;
+    border: 1px solid aquamarine;
+}
+#name{
+    width: 95%;
+    outline: none;
+    margin: 0 0 20px 0;
+}
+#description{
+    width: 95%;
+    outline: none;
+    margin: 0 0 20px 0;
+}
+#category{
+    width: 95%;
+    outline: none;
+    margin: 0 0 20px 0;
+}
+#image{
+    width: 95%;
+    outline: none;
+}
+#location{
+    width: 95%;
+    margin: 20px 0;
+    outline: none;
+}
+#price{
+    width: 95%;
+    margin: 0 0 20px 0;
+    outline: none;
+}
+#submit{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+}
+body{
+    transition: .5s linear;
+}
