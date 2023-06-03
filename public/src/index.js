@@ -47,7 +47,7 @@ form.onsubmit = async(e)=>{
                 alert("please enter same password in both fields")
                 return
             }
-        let res = await fetch("http://localhost:3000/signup", {
+        let res = await fetch("https://mock8-3i20.onrender.com/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -63,7 +63,7 @@ form.onsubmit = async(e)=>{
         logintoggle.style.backgroundColor = "aquamarine"
         signuptoggle.style.backgroundColor = "gray"
         }else{
-            let res = await fetch("http://localhost:3000/login", {
+            let res = await fetch("https://mock8-3i20.onrender.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

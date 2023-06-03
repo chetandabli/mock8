@@ -2,7 +2,7 @@ let i = 1;
 
 async function fetchDataLength(){
     try {
-       let datalength = await fetch("http://localhost:3000/post") 
+       let datalength = await fetch("https://mock8-3i20.onrender.com/post") 
        datalength= await datalength.json();
        appendbtn(datalength.length)
     } catch (error) {
@@ -12,7 +12,7 @@ async function fetchDataLength(){
 fetchDataLength()
 async function fetchData(id){
     try {
-       let data = await fetch(`http://localhost:3000/post/${id}`) 
+       let data = await fetch(`https://mock8-3i20.onrender.com/post/${id}`) 
        data= await data.json();
        appendData(data)
     } catch (error) {
@@ -48,7 +48,7 @@ filter.onchange = async()=>{
         fetchData(i);
     }else{
         try {
-            let data = await fetch(`http://localhost:3000/filterpost?category=${filter.value}`)
+            let data = await fetch(`https://mock8-3i20.onrender.com/filterpost?category=${filter.value}`)
             data= await data.json();
             appendData(data)
          } catch (error) {
@@ -64,7 +64,7 @@ sort.onchange = async()=>{
         fetchData(i); 
     }else{
         try {
-            let data = await fetch(`http://localhost:3000/sort?order=${sort.value}`)
+            let data = await fetch(`https://mock8-3i20.onrender.com/sort?order=${sort.value}`)
             data= await data.json();
             appendData(data)
          } catch (error) {

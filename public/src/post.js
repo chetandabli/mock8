@@ -28,7 +28,7 @@ form.onsubmit = async(e)=>{
             if(!localStorage.getItem("token")){
                 location.assing("../index.html")
             }
-            let res = await fetch("http://localhost:3000/post", {
+            let res = await fetch("https://mock8-3i20.onrender.com/post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
